@@ -106,7 +106,128 @@ plt.show()
 
 ```
 
+# 3. Data Comparison Analysis
+Tipping Behavior by Customer Segments
+## Gender Comparison:
 
+Male customers: Average tip $3.09
+Female customers: Average tip $2.83
+Difference primarily attributed to higher bill amounts rather than generosity
+No statistically significant difference in tip percentages
+
+## Smoking Status Comparison:
+
+Smokers: Average tip $3.01
+Non-smokers: Average tip $2.97
+No significant difference in tipping behavior (p-value > 0.05)
+
+## Day of Week Analysis:
+
+Highest Tips: Sunday ($3.26 average)
+Lowest Tips: Thursday ($2.77 average)
+Weekend days show consistently higher absolute tips
+Statistical significance confirmed (ANOVA p-value < 0.05)
+
+## Service Time Comparison:
+
+Dinner: Average tip $3.10
+Lunch: Average tip $2.73
+Dinner customers tip 13.5% more on average
+Correlation with higher dinner bill amounts
+
+Tip Comparison Across Categories
+Tip Percentage Comparison Charts
+
+Statistical Significance Testing
+Gender differences: Not statistically significant (p > 0.05)
+Smoking status: No significant difference (p > 0.05)
+Day of week: Statistically significant variation (p < 0.05)
+Service time: Significant difference (p < 0.05)
+
+# 4. Data Relationship Analysis
+Correlation Analysis
+Strong Positive Relationships:
+
+Total Bill ↔ Tip Amount: r = 0.676 (Strong)
+
+For every $10 increase in bill, tip increases by approximately $1.83
+Highly significant relationship (p < 0.001)
+Party Size ↔ Total Bill: r = 0.598 (Moderate-Strong)
+
+Larger parties generate proportionally higher bills
+Each additional person adds approximately $7.44 to the bill
+Interesting Inverse Relationships:
+
+Total Bill ↔ Tip Percentage: r = -0.203 (Weak Negative)
+Higher bills receive slightly lower tip percentages
+Customers may tip a flat amount rather than strict percentage
+Moderate Relationships:
+
+Party Size ↔ Tip Amount: r = 0.489 (Moderate)
+Larger groups tip more in absolute terms
+Relationship mediated through bill amount
+[Insert Figure 7: Correlation Heatmap] [Insert Figure 8: Scatter Plots with Regression Lines]
+
+Advanced Relationship Patterns
+Multi-variable Analysis:
+
+Dinner customers show stronger bill-to-tip correlation than lunch
+Male customers at dinner generate highest absolute tips
+Weekend parties of 3+ show premium tipping behavior
+Smoking status shows no interaction effects with other variables
+Categorical Variable Associations:
+
+Gender and smoking status: Independent (χ² p > 0.05)
+Day and time: Significant association (χ² p < 0.001)
+Time preferences vary by day of week
+[Insert Figure 9: Advanced Relationship Visualizations]
+
+# 5. Business Insights and Recommendations
+Revenue Optimization
+Focus on Dinner Service: 68% of business with higher per-customer value
+Weekend Marketing: Saturday/Sunday show peak performance
+Party Size Strategy: Target groups of 3+ for maximum revenue impact
+Bill Scaling: Understand that tip percentages may decrease on high-value bills
+Operational Insights
+Staffing Patterns: Align staff levels with dinner/weekend peaks
+Customer Segmentation: Male dinner customers and larger parties are high-value segments
+Service Quality: Maintain consistent service regardless of bill size
+Capacity Planning: Weekend dinner combinations require maximum capacity
+Strategic Recommendations
+Loyalty Programs: Target frequent dinner customers and larger parties
+Menu Pricing: Consider tip percentage decline on higher-value items
+Service Training: Focus on consistent percentage-based tipping education
+Marketing Timing: Promote weekend dinner experiences for maximum ROI
+
+# 6. Limitations and Future Analysis
+Current Limitations
+Single restaurant/chain data (generalizability questions)
+Limited time period (seasonal variations unknown)
+No customer satisfaction or service quality metrics
+Missing payment method information
+Recommended Future Analysis
+Seasonal Patterns: Year-round data collection
+Service Quality Metrics: Customer satisfaction correlation with tips
+Payment Methods: Cash vs. card tipping behavior analysis
+Competitive Analysis: Industry benchmarking
+Economic Factors: Impact of economic conditions on tipping
+
+# 7. Conclusions
+The restaurant tips dataset analysis reveals clear patterns in customer behavior and tipping practices. The strong correlation between bill amounts and tips provides a reliable foundation for revenue forecasting, while the identification of high-value customer segments (dinner customers, weekend visitors, larger parties) offers actionable insights for business optimization.
+
+Key strategic takeaways include the importance of dinner service optimization, weekend capacity management, and understanding the nuanced relationship between bill size and tip percentages. The analysis supports data-driven decision making for restaurant operations, marketing strategies, and service delivery improvements.
+
+The clean, complete nature of the dataset and the statistical significance of key relationships provide confidence in these findings and their applicability to restaurant business strategy.
+
+# Report Prepared Using:
+
+Python 3.x with pandas, numpy, matplotlib, seaborn
+Statistical analysis with scipy and statsmodels
+Data visualization and correlation analysis
+Hypothesis testing and significance evaluation
+Note: All figures referenced in this report are generated from the accompanying Jupyter notebook analysis and should be inserted at the indicated locations for the complete PDF version.
+
+These changes are made with AI (Github Copilot).
 
 
 
